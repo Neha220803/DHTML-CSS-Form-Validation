@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Student Form</title>
+    <script src="D:\Neha\WebTech\jQuerry.js"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <h2>Student Details Form</h2>
+            <div class="row">
+                <label class="labels" for="fullName">Full Name:</label>
+                <input class="inputBox" type="text" id="fullName" name="fullName" placeholder="Enter your Full Name"
+                    required>
+            </div>
+
+
+            <div class="row">
+                <label class="labels" for="dateOfBirth">Date of Birth:</label>
+                <input class="inputBox" type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </div>
+
+            <div class="row">
+                <label class="labels">Gender:
+                    <div class="GenderBox">
+                        <label class=" rText">
+                            <input type="radio" class="radio" name="gender">
+                            Male
+                        </label>
+                        <label class="rText">
+                            <input type="radio" class="radio" name="gender">
+                            Female
+                        </label>
+                    </div>
+                </label>
+            </div>
+
+
+            <div class="row">
+                <label class="labels" for="phoneNumber" minlength="8">Phone Number:</label>
+                <input class="inputBox" type="tel" id="phoneNumber" name="phoneNumber"
+                    placeholder="Enter your 10 digit Phone No" required>
+            </div>
+
+            <div class="row">
+                <label class="labels" for="email">Email:</label>
+                <input class="inputBox" type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="row">
+                <label class="labels" for="dep">Department</label>
+                <input class="inputBox" type="text" id="dep" name="department" placeholder="IT/CSE/EEE/ECE..." required>
+            </div>
+
+            <div class="row">
+                <label class="labels" for="currentYear" required>Current Year:</label>
+                <select class="inputBox" class="labels" id="currentYear" name="currentYear" required>
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                </select>
+            </div>
+
+            <div class="lastTwo">
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                <label for="privacyPolicy">I agree to the privacy policy.</label>
+            </div>
+
+            <div class="lastTwo">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
